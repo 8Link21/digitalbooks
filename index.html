@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Digital Books</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="/assets/styles/style.css" /> -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+
+
+</head>
+
+<body>
+    <div id="app">
+
+        <nav id="nav" class="navbar navbar-expand-sm mb-3 navbar-light fixed-top bg-light">
+            <div class="container-fluid">
+            <router-link class="navbar-brand" to="/">Digital Books</router-link>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <router-link to="/shop">Shop</router-link>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <router-link to="/contact">Contact</router-link>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <router-link to="/goldenbook">The Book</router-link>
+                    </a>
+                </li>
+                <li class="nav-item active ml-3">
+                    <img src="/assets/img/cart.svg" alt="Panier Achats"/><!-- @click='ToggleCart=!ToggleCart' -->
+                    <!-- <span class="badge badge-light" v-show='this.cart.length'>{{this.cart.length}}</span> -->
+                </li>
+                </li>
+            </ul>
+        </div>
+        </nav>
+
+        
+        <main id="main" class="d-flex"><!-- <b-row cols="1" :cols-sm='ToggleCart ? 1 : 2'> -->
+            <div class="container-fluid my-5 px-0">
+                <div class="row-cols-1 mt-4">
+                    <router-view />
+                </div>
+            </div>
+        </main>
+
+
+
+        <footer id="footer wxc-bg-foot">
+            <nav class="navbar navbar-light fixed-bottom p-0 wxc-bg-foot">
+                <a class="navbar-brand mx-auto" href="#">© DigitalBooks by Cos. @bocal - 2020</a>
+            </nav>
+        </footer>
+        
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

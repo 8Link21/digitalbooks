@@ -1,0 +1,84 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    text-decoration-line: none;
+  }
+  
+  #nav {
+    padding: 10px;
+    /* margin-bottom :10px */
+  }
+  
+  #nav a {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  #nav a.router-link-exact-active {
+    color: #42b983;
+  }
+  
+  #footer, .wxc-bg-foot {
+    background-color: #42b983;
+  }
+  
+  .vert {
+      color : #42b983;
+  }
+  /* Les animations d'entrée (« enter ») et de sortie (« leave »)  */
+  /* peuvent utiliser différentes fonctions de durée et de temps.  */
+  .slide-fade-enter-active {
+    transition: all 1.3s ease;
+  }
+  /* .slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  } */
+  .slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+
+
+  .wxc-caroussel img {
+    height: 70vh;
+    width: auto;
+    }
+
+    .wxc-com {
+        height: 50vh;
+        overflow: scroll;
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      /* textarea:invalid {
+        border: 2px dashed red;
+      }
+      
+      textarea:valid {
+        border: 2px solid lime;
+      } */
+
+#goldenbook {
+    height: 100vh;
+}
+
+.cardzimg {
+    height: auto;
+    width: 100px;
+
+    position: center
+}
+
+.cardzimg2 {
+    height: auto;
+    width: 50px;
+
+    position: center
+}
